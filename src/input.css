@@ -1,0 +1,7 @@
+@import url("../public/Inter/static/Inter_24pt-Bold.ttf");
+@import "tailwindcss";
+
+@theme {
+  --font-Inter: "inter";
+  --color-blue: rgba(255, 255, 255, 0.5);
+},
