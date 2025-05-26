@@ -1,4 +1,5 @@
 /*! tailwindcss v4.0.9 | MIT License | https://tailwindcss.com */
+@import url("../public/Inter/static/Inter_24pt-Bold.ttf");
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -10,6 +11,9 @@
     --color-amber-300: oklch(0.879 0.169 91.605);
     --color-sky-700: oklch(0.5 0.134 242.749);
     --color-gray-400: oklch(0.707 0.022 261.325);
+    --color-gray-500: oklch(0.551 0.027 264.364);
+    --color-gray-800: oklch(0.278 0.033 256.848);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
@@ -33,7 +37,6 @@
     --default-mono-font-variation-settings: var(
       --font-mono--font-variation-settings
     );
-    --font-inter: "inter";
   }
 }
 @layer base {
@@ -439,11 +442,14 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
-  .h-20 {
-    height: calc(var(--spacing) * 20);
+  .h-5 {
+    height: calc(var(--spacing) * 5);
   }
   .h-52 {
     height: calc(var(--spacing) * 52);
+  }
+  .h-53 {
+    height: calc(var(--spacing) * 53);
   }
   .h-screen {
     height: 100vh;
@@ -457,14 +463,14 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
   .w-52 {
     width: calc(var(--spacing) * 52);
-  }
-  .w-\[50\%\] {
-    width: 50%;
   }
   .w-full {
     width: 100%;
@@ -1087,6 +1093,12 @@
   .bg-gray-400 {
     background-color: var(--color-gray-400);
   }
+  .bg-gray-500 {
+    background-color: var(--color-gray-500);
+  }
+  .bg-gray-800 {
+    background-color: var(--color-gray-800);
+  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
@@ -1098,6 +1110,9 @@
   }
   .bg-sky-700 {
     background-color: var(--color-sky-700);
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .-bg-conic {
     --tw-gradient-position: in oklab;
@@ -1307,9 +1322,6 @@
   .align-top {
     vertical-align: top;
   }
-  .font-inter {
-    font-family: var(--font-inter);
-  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -1394,6 +1406,9 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
+  }
+  .text-black {
+    color: var(--color-black);
   }
   .text-white {
     color: var(--color-white);
@@ -1842,7 +1857,6 @@
     transform-box: view-box;
   }
 }
-@import url("../public/Inter/Inter-Italic-VariableFont_opsz\wght.ttf");
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
