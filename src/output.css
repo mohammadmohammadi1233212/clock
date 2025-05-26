@@ -445,6 +445,9 @@
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
   .h-52 {
     height: calc(var(--spacing) * 52);
   }
@@ -471,6 +474,9 @@
   }
   .w-52 {
     width: calc(var(--spacing) * 52);
+  }
+  .w-\[50\%\] {
+    width: 50%;
   }
   .w-full {
     width: 100%;
